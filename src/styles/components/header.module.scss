@@ -10,6 +10,16 @@
     background-color: #20232A;
     box-sizing: border-box;
 
+
+    h3{
+        font-family: $custom-font;
+    }
+
+    span{
+        font-family: $custom2-font;
+        margin-right: 22px;
+    }
+
     .logo {
     color: #FFFFFF;
     margin: 0;
@@ -29,7 +39,7 @@
     color: #FFFFFF;
     margin: 10px 20px;
     padding: 10px;
-    font-family: $primary-font;
+    font-family: $third-font;
     font-size: $navbar-font-size;
     &:hover {
         color: #E9CAF3;

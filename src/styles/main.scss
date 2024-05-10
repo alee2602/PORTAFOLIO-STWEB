@@ -1,7 +1,14 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%; 
-    height: 100%; 
-    box-sizing: border-box; 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Plz', sans-serif;
+    src: url('/fonts/plz.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Metdemo-BLMG';
+    src: url('/fonts/Metdemo-BLMG.ttf') format('truetype');
+}
+
