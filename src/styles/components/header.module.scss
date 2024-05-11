@@ -6,10 +6,10 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;  
-    padding: 10px 0; 
-    background-color: #20232A;
+    padding: 5px 0; 
+    background-color: #161723; // Hacer el fondo semi-transparente
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Aplicar desenfoque al fondo
     box-sizing: border-box;
-
 
     h3{
         font-family: $custom-font;
