@@ -1,0 +1,78 @@
+@import '@/styles/variables'; 
+
+.about-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0D0C1D;
+    padding: 100px;
+
+
+    .header-text{
+        color: #0D0C1D; 
+        font-size: 32px;
+        font-family: $averia-font;
+        text-shadow: rgb(33, 150, 243) 3px 0px 0px, rgb(33, 150, 243) 2.83487px 0.981584px 0px, rgb(33, 150, 243) 2.35766px 1.85511px 0px, rgb(33, 150, 243) 1.62091px 2.52441px 0px, rgb(33, 150, 243) 0.705713px 2.91581px 0px, rgb(33, 150, 243) -0.287171px 2.98622px 0px, rgb(33, 150, 243) -1.24844px 2.72789px 0px, rgb(33, 150, 243) -2.07227px 2.16926px 0px, rgb(33, 150, 243) -2.66798px 1.37182px 0px, rgb(33, 150, 243) -2.96998px 0.42336px 0px, rgb(33, 150, 243) -2.94502px -0.571704px 0px, rgb(33, 150, 243) -2.59586px -1.50383px 0px, rgb(33, 150, 243) -1.96093px -2.27041px 0px, rgb(33, 150, 243) -1.11013px -2.78704px 0px, rgb(33, 150, 243) -0.137119px -2.99686px 0px, rgb(33, 150, 243) 0.850987px -2.87677px 0px, rgb(33, 150, 243) 1.74541px -2.43999px 0px, rgb(33, 150, 243) 2.44769px -1.73459px 0px, rgb(33, 150, 243) 2.88051px -0.838247px 0px;
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px; 
+        max-width: 1200px;
+    }
+
+    .picture {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden; 
+        margin-bottom: 20px; 
+    }
+
+    .picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+
+    .about-text {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 0;
+        flex-grow: 1;
+        max-width: 80%;
+        font-family: $poppins-font;
+    }
+
+    .skills {
+        display: flex;
+        margin-top: 20px;
+        gap: 30px;
+
+        .skill-button {
+            background-color: #0D0C1D;
+            border: 1px solid #0D0C1D;
+            font-size: 16x;
+            border-radius: 8px;
+            color: white;
+            font-family: $poppins-font;
+            padding: 10px 20px;
+            margin-top: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out; 
+            box-shadow: 0 0 10px #052659, 0 0 20px #052659, 0 0 30px #053659; 
+            &:hover {
+                color: #FFFFFF; 
+                background-color: #4C2A85;
+                border: 1px solid #4C2A75;
+                box-shadow: 0 0 10px #8A2BE2, 0 0 20px #8A2BE2, 0 0 30px #8A2BE2, 0 0 40px #8A2BE2; 
+            }
+        }
+    }
+
+}

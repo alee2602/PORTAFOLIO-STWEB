@@ -18,7 +18,7 @@ function HeroSection(){
                     </textPath>
                     </text>
                 </svg>
-                <div className={styles.textcontainer}>
+                <div className={styles['text-container']}>
                     <div>You're a star and the</div>
                     <div>sky's the limit</div>
                 </div>

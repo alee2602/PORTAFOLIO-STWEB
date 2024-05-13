@@ -6,10 +6,10 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;  
-    padding: 5px 0; 
-    background-color: #161723; // Hacer el fondo semi-transparente
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Aplicar desenfoque al fondo
-    box-sizing: border-box;
+    background-color: #0D0C1D;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
 
     h3{
         font-family: $custom-font;
@@ -41,9 +41,24 @@
     padding: 10px;
     font-family: $third-font;
     font-size: $navbar-font-size;
-    &:hover {
-        color: #E9CAF3;
-        font-weight: bold;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    background-color: transparent; 
+
+    &:hover, &.active { 
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba($neon-color, 0.2); 
+            border-radius: 8px;
+            box-shadow: 0 0 4px $neon-color, 0 0 8px $neon-color, 0 0 10px $neon-color; // Efecto de brillo neón
+            z-index: -1;
+        }
     }
+    
     }
 }
