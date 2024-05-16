@@ -1,8 +1,0 @@
-<svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
-    <path id="curvedPath" fill="transparent" d="M20,100 Q300,-50 580,100" />
-    <text font-size="32" font-family="Arial">
-        <textPath xlink:href="#curvedPath" startOffset="50%">
-            Greetings!
-        </textPath>
-    </text>
-</svg>
