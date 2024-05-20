@@ -1,0 +1,68 @@
+{
+    "particles": {
+    "number": {
+        "value": 20,
+        "density": {
+        "enable": true,
+        "value_area": 800
+        }
+    },
+    "shape": {
+        "type": "image",
+        "image": {
+        "src": "/notamusical.png",
+        "width": 20,
+        "height": 20
+        }
+    },
+    "opacity": {
+        "value": 0.8,
+        "random": true
+    },
+    "size": {
+        "value": 30,
+        "random": true
+    },
+    "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "top",
+        "random": true,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+        }
+    }
+    },
+    "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+        "onhover": {
+        "enable": true,
+        "mode": "bubble"
+        },
+        "onclick": {
+        "enable": true,
+        "mode": "push"
+        }
+    },
+    "modes": {
+        "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 0.8,
+        "speed": 3
+        },
+        "repulse": {
+        "distance": 200,
+        "duration": 0.4
+        }
+    }
+    },
+    "retina_detect": true
+}

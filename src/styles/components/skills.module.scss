@@ -1,81 +1,93 @@
 @import '@/styles/variables'; 
 
-$primary-color: #00E5FF; // Cian claro
-$secondary-color: #6A11FF; // Violeta
-$background-color: rgba(0, 0, 0, 0.8); // Fondo semi-transparente
-$text-color: #FFFFFF; // Blanco
+.skillsSection {
+    padding: 2rem;
+    background: #0D0C1D; //#1a1a2e; 
+    color: #e0e0e0; 
+    text-align: center;
+    margin-top: 40px;
 
-.skills-section {
-text-align: center;
-padding: 50px 20px;
-background: $background-color;
-border-radius: 15px;
-box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-margin: 40px auto;
-max-width: 800px;
+    h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #537CBE; 
+    font-family: $circular-font;
+    }
 
-h2 {
-    font-size: 3rem;
-    color: $primary-color;
-    margin-bottom: 30px;
-    text-shadow: 
-    3px 0px 0px $secondary-color,
-    2.83487px 0.981584px 0px $secondary-color,
-    2.35766px 1.85511px 0px $secondary-color,
-    1.62091px 2.52441px 0px $secondary-color,
-    0.705713px 2.91581px 0px $secondary-color,
-    -0.287171px 2.98622px 0px $secondary-color,
-    -1.24844px 2.72789px 0px $secondary-color,
-    -2.07227px 2.16926px 0px $secondary-color,
-    -2.66798px 1.37182px 0px $secondary-color,
-    -2.96998px 0.42336px 0px $secondary-color,
-    -2.94502px -0.571704px 0px darken($secondary-color, 10%),
-    -2.59586px -1.50383px 0px darken($secondary-color, 10%),
-    -1.96093px -2.27041px 0px darken($secondary-color, 10%),
-    -1.11013px -2.78704px 0px darken($secondary-color, 10%),
-    -0.137119px -2.99686px 0px darken($secondary-color, 10%),
-    0.850987px -2.87677px 0px darken($secondary-color, 10%),
-    1.74541px -2.43999px 0px darken($secondary-color, 10%),
-    2.44769px -1.73459px 0px darken($secondary-color, 10%),
-    2.88051px -0.838247px 0px darken($secondary-color, 10%);
-}
-
-.skills-container {
+    .skillsContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
+    justify-content: center;
 
-.skill {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    width: 250px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+    .skillCategory {
+        margin: 1rem;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.05); 
+        border-radius: 10px;
+        width: 300px;
 
-    h3 {
-    font-size: 2rem;
-    color: $primary-color;
-    margin-bottom: 10px;
-    text-shadow: 
-        2px 0px 0px $secondary-color,
-        1.83487px 0.981584px 0px $secondary-color,
-        1.35766px 1.85511px 0px $secondary-color,
-        0.62091px 2.52441px 0px $secondary-color,
-        0.105713px 2.91581px 0px $secondary-color;
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #EFF1E4; 
+            font-family: $third-font;
+            margin-bottom: 40px;
+        }
+
+        .skillsList {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        .skillIconContainer {
+            margin: 0.5rem;
+            position: relative;
+            margin-bottom: 30px;
+
+            &:hover::after {
+                content: attr(data-tooltip);
+                position: absolute;
+                bottom: -1.5rem;
+                left: 50%;
+                transform: translateX(-50%);
+                background: #0f3460;
+                color: #FFFFFF;
+                padding: 0.3rem 0.6rem;
+                border-radius: 5px;
+                font-size: 0.8rem;
+                white-space: nowrap;
+                opacity: 0.8;
+                font-family: $recoleta-font
+            }
+        }
+
+        .skillIcon {
+            width: 50px;
+            height: 50px;
+        }
+        }
     }
 
-    p {
-    font-size: 1.2rem;
-    color: $text-color;
-    }
+    .skill {
+        margin: 1rem;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.05); 
+        border-radius: 10px;
+        width: 300px;
 
-    &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #086CFF; 
+            font-family: $third-font;
+        }
+
+        p {
+            font-size: 1rem;
+            font-family: $poppins-font;
+        }
+    }
     }
 }
-}
+
+
