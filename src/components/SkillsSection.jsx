@@ -1,6 +1,8 @@
 import styles from '@/styles/components/skills.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-const SkillsSection = ({ skillType }) => {
+const SkillsSection = ({ skillType, toggleVisibility, isVisible }) => {
 const hardSkills = [
     {
     category: 'Programming Languages',
@@ -46,41 +48,56 @@ const softSkills = [
     { name: 'Teamwork', description: 'Collaboration, Conflict resolution' },
     { name: 'Problem Solving', description: 'Critical thinking, Creativity' },  ];
 
-return (
-    <div className={styles.skillsSection}>
-    <h2>My {skillType === 'hard' ? 'Hard' : 'Soft'} Skills</h2>
-    <div className={styles.skillsContainer}>
-        {skillType === 'hard' ? (
-        hardSkills.map((category) => (
-            <div key={category.category} className={styles.skillCategory}>
-            <h3>{category.category}</h3>
-            <div className={styles.skillsList}>
-                {category.skills.map((skill) => (
-                <a
-                    href={skill.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    key={skill.name}
-                    className={styles.skillIconContainer}
-                    data-tooltip={skill.name}
-                >
-                    <img src={skill.svg} alt={`${skill.name} logo`} className={styles.skillIcon} />
-                </a>
-                ))}
+    return isVisible ? (
+        <div className={styles.skillsSection}>
+            <div className={styles.headerContainer}>
+                <h2>My {skillType === 'hard' ? 'Hard' : 'Soft'} Skills</h2>
+                <FontAwesomeIcon
+                    icon={faChevronUp}
+                    onClick={toggleVisibility}
+                    className={`${styles.chevronIcon}`}
+                />
             </div>
+            <div className={styles.skillsContainer}>
+                {skillType === 'hard' ? (
+                    hardSkills.map((category) => (
+                        <div key={category.category} className={styles.skillCategory}>
+                            <h3>{category.category}</h3>
+                            <div className={styles.skillsList}>
+                                {category.skills.map((skill) => (
+                                    <a
+                                        href={skill.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        key={skill.name}
+                                        className={styles.skillIconContainer}
+                                        data-tooltip={skill.name}
+                                    >
+                                        <img src={skill.svg} alt={`${skill.name} logo`} className={styles.skillIcon} />
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+                    ))
+                ) : (
+                    softSkills.map((skill) => (
+                        <div className={styles.skill} key={skill.name}>
+                            <h3>{skill.name}</h3>
+                            <p>{skill.description}</p>
+                        </div>
+                    ))
+                )}
             </div>
-        ))
-        ) : (
-        softSkills.map((skill) => (
-            <div className={styles.skill} key={skill.name}>
-            <h3>{skill.name}</h3>
-            <p>{skill.description}</p>
-            </div>
-        ))
-        )}
         </div>
-    </div>
-);
+    ) : (
+        <div className={styles.skillsToggle}>
+            <FontAwesomeIcon
+                icon={faChevronUp}
+                onClick={toggleVisibility}
+                className={styles.chevronIcon}
+            />
+        </div>
+    );
 };
 
 export default SkillsSection;

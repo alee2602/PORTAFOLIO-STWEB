@@ -11,6 +11,10 @@ function AboutSection() {
     setShowSkills(true);
     };
 
+    const toggleSkillsVisibility = () => {
+        setShowSkills(prev => !prev);
+    };
+
     return (
     <div className={styles['about-section']}>
         <div className={styles['content-container']}>
@@ -31,7 +35,7 @@ function AboutSection() {
             <button className={styles['skill-button']} onClick={() => handleShowSkills('hard')}>Hard Skills</button>
             <button className={styles['skill-button']} onClick={() => handleShowSkills('soft')}>Soft Skills</button>
         </div>
-        {showSkills && <SkillsSection skillType={skillType} />}
+        {showSkills && <SkillsSection skillType={skillType} toggleVisibility={toggleSkillsVisibility} isVisible={showSkills} />}
         </div>
     </div>
     );

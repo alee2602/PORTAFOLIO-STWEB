@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ParticlesBackground from '@/components/ParticlesBackground';
+import ProjectSection from '@/components/ProjectsSection';
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <AboutSection /> 
+      <ProjectSection/>
     </div>
   );
 };

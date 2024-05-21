@@ -1,0 +1,43 @@
+.card {
+    background-color: #1a1a2e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 300px; 
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    .image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .content {
+        padding: 1rem;
+
+        .title {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .description {
+            color: #ccc;
+            margin-bottom: 1rem;
+        }
+
+        .link {
+            color: #537CBE;
+            text-decoration: none;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -2,92 +2,117 @@
 
 .skillsSection {
     padding: 2rem;
-    background: #0D0C1D; //#1a1a2e; 
-    color: #e0e0e0; 
+    background: #0D0C1D;
+    color: #e0e0e0;
     text-align: center;
     margin-top: 40px;
+    position: relative;
 
-    h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #537CBE; 
-    font-family: $circular-font;
+    .headerContainer {
+        position: relative;
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #537CBE;
+            font-family: $circular-font;
+        }
+
+        .chevronIcon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            color: #537CBE;
+            transition: transform 0.3s ease;
+            font-size: 1.5rem; // Tamaño del icono
+        }
     }
 
     .skillsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem; // Añadido para separar el contenedor del icono
 
-    .skillCategory {
-        margin: 1rem;
-        padding: 1rem;
-        background: rgba(255, 255, 255, 0.05); 
-        border-radius: 10px;
-        width: 300px;
+        .skillCategory {
+            margin: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            width: 300px;
 
-        h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: #EFF1E4; 
-            font-family: $third-font;
-            margin-bottom: 40px;
-        }
+            h3 {
+                font-size: 1.5rem;
+                color: #EFF1E4;
+                font-family: $third-font;
+                margin: 0; // Elimina el margen inferior
+            }
 
-        .skillsList {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            .skillsList {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
 
-        .skillIconContainer {
-            margin: 0.5rem;
-            position: relative;
-            margin-bottom: 30px;
+                .skillIconContainer {
+                    margin: 0.5rem;
+                    position: relative;
+                    margin-bottom: 30px;
 
-            &:hover::after {
-                content: attr(data-tooltip);
-                position: absolute;
-                bottom: -1.5rem;
-                left: 50%;
-                transform: translateX(-50%);
-                background: #0f3460;
-                color: #FFFFFF;
-                padding: 0.3rem 0.6rem;
-                border-radius: 5px;
-                font-size: 0.8rem;
-                white-space: nowrap;
-                opacity: 0.8;
-                font-family: $recoleta-font
+                    &:hover::after {
+                        content: attr(data-tooltip);
+                        position: absolute;
+                        bottom: -1.5rem;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: #0f3460;
+                        color: #FFFFFF;
+                        padding: 0.3rem 0.6rem;
+                        border-radius: 5px;
+                        font-size: 0.8rem;
+                        white-space: nowrap;
+                        opacity: 0.8;
+                        font-family: $recoleta-font;
+                    }
+                }
+
+                .skillIcon {
+                    width: 50px;
+                    height: 50px;
+                }
             }
         }
 
-        .skillIcon {
-            width: 50px;
-            height: 50px;
-        }
-        }
-    }
+        .skill {
+            margin: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            width: 300px;
 
-    .skill {
-        margin: 1rem;
-        padding: 1rem;
-        background: rgba(255, 255, 255, 0.05); 
-        border-radius: 10px;
-        width: 300px;
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+                color: #086CFF;
+                font-family: $third-font;
+            }
 
-        h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: #086CFF; 
-            font-family: $third-font;
+            p {
+                font-size: 1rem;
+                font-family: $poppins-font;
+            }
         }
-
-        p {
-            font-size: 1rem;
-            font-family: $poppins-font;
-        }
-    }
     }
 }
+
+.skillsToggle {
+    text-align: center;
+    .chevronIcon {
+        cursor: pointer;
+        color: #537CBE;
+        font-size: 2rem;
+        transition: transform 0.3s ease;
+    }
+}
+
 
 
