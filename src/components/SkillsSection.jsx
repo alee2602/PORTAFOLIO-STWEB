@@ -1,6 +1,7 @@
 import styles from '@/styles/components/skills.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import Image from 'next/image';
 
 const SkillsSection = ({ skillType, toggleVisibility, isVisible }) => {
 const hardSkills = [
@@ -74,7 +75,13 @@ const softSkills = [
                                         className={styles.skillIconContainer}
                                         data-tooltip={skill.name}
                                     >
-                                        <img src={skill.svg} alt={`${skill.name} logo`} className={styles.skillIcon} />
+                                        <Image
+                                        src={skill.svg}
+                                        alt={`${skill.name} logo`}
+                                        width={50}  
+                                        height={50}
+                                        className={styles.skillIcon}
+                                    />
                                     </a>
                                 ))}
                             </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SkillsSection from '@/components/SkillsSection';
 import styles from '@/styles/components/aboutme.module.scss';
+import Image from 'next/image';
 
 function AboutSection() {
     const [showSkills, setShowSkills] = useState(false);
@@ -24,7 +25,12 @@ function AboutSection() {
                     </div>
                     <div className={styles['content-wrapper']}>
                         <div className={styles.picture}>
-                            <img src="/pic.jpg" alt="Monica's Profile Picture" />
+                        <Image
+                            src="/pic.jpg"
+                            alt="Monica's Profile Picture" 
+                            width={200}  
+                            height={200}
+                            />
                         </div>
                         <div className={styles['about-text']}>
                             <p>I’m a passionate third-year Computer Science student with a knack for both front-end and back-end web development. My journey in tech has led me to a fascinating crossroad where design meets functionality, enabling me to craft seamless digital experiences.</p>
