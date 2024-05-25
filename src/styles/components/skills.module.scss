@@ -24,7 +24,7 @@
             cursor: pointer;
             color: #537CBE;
             transition: transform 0.3s ease;
-            font-size: 1.5rem; // Tamaño del icono
+            font-size: 1.5rem; 
         }
     }
 
@@ -32,7 +32,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 1rem; // Añadido para separar el contenedor del icono
+        margin-top: 1rem; 
 
         .skillCategory {
             margin: 1rem;
@@ -45,7 +45,7 @@
                 font-size: 1.5rem;
                 color: #EFF1E4;
                 font-family: $third-font;
-                margin: 0; // Elimina el margen inferior
+                margin-bottom: 20px; 
             }
 
             .skillsList {

@@ -1,0 +1,53 @@
+@import '@/styles/variables'; 
+
+
+.footer {
+    background-color: #0D0C1D; 
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+    position: relative;
+
+    .contactTitle {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-family: 'Poppins', sans-serif; 
+    }
+
+    .footerContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .socialLinks {
+        margin-bottom: 1rem;
+        display: flex;
+        gap: 2rem;
+
+        a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-size: 2rem; 
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #ffcc00;
+            }
+        }
+
+        .icon {
+            color: white;
+            width: 3rem; 
+            height: 3rem; 
+        }
+    }
+
+    .copyRight {
+        font-size: 1rem;
+    }
+}

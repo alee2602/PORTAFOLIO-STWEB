@@ -4,16 +4,15 @@
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    width: 300px; 
-
-    &:hover {
-        transform: scale(1.05);
-    }
+    margin: 0 auto; 
+    min-height: 28rem;
+    max-width: 300px;
 
     .image {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
+        width: 300px; 
+        height: 230px;
+        align-content: center;
+        border-radius: 4px;
     }
 
     .content {
@@ -36,6 +35,7 @@
             font-weight: bold;
 
             &:hover {
+                margin-top: 10px;
                 text-decoration: underline;
             }
         }

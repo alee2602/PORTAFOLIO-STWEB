@@ -25,6 +25,7 @@ const hardSkills = [
         { name: 'CSS', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS', svg: '/svgs/css.svg' },
         { name: 'SASS', link: 'https://sass-lang.com/documentation', svg: '/svgs/sass.svg' },
         { name: 'Express.js', link: 'https://expressjs.com/en/starter/installing.html', svg: '/svgs/express.svg' },
+        { name: 'Docker', link: 'https://docs.docker.com/', svg: '/svgs/docker.svg' },
             ],
         },
     {

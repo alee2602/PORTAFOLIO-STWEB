@@ -1,64 +1,65 @@
-@import '@/styles/variables'; 
+@import '@/styles/variables';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;  
+    width: 100%;
     background-color: #0D0C1D;
     position: sticky;
-    top: 0; 
-    z-index: 10; 
+    top: 0;
+    z-index: 10;
 
-    h3{
+    h3 {
         font-family: $custom-font;
     }
 
-    span{
+    span {
         font-family: $custom2-font;
         margin-right: 24px;
     }
 
     .logo {
-    color: #FFFFFF;
-    margin: 0;
-    font-size: $header-font-size;
-    margin-left: 30px;
-    font-weight: bold;
+        color: #FFFFFF;
+        margin: 0;
+        font-size: $header-font-size;
+        margin-left: 30px;
+        font-weight: bold;
     }
 
-    .nav{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+    .nav {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
     }
 
-    .link{
-    text-decoration: none;
-    color: #FFFFFF;
-    margin: 10px 20px;
-    padding: 10px;
-    font-family: $third-font;
-    font-size: $navbar-font-size;
-    transition: color 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    background-color: transparent; 
+    .link {
+        text-decoration: none;
+        color: #FFFFFF;
+        margin: 10px 20px;
+        padding: 10px;
+        font-family: $third-font;
+        font-size: $navbar-font-size;
+        transition: color 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        background-color: transparent;
 
-    &:hover, &.active { 
-        &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background-color: rgba($neon-color, 0.2); 
-            border-radius: 8px;
-            box-shadow: 0 0 4px $neon-color, 0 0 8px $neon-color, 0 0 10px $neon-color; // Efecto de brillo neón
-            z-index: -1;
+        &:hover,
+        &.active {
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-color: rgba($neon-color, 0.2);
+                border-radius: 8px;
+                box-shadow: 0 0 4px $neon-color, 0 0 8px $neon-color, 0 0 10px $neon-color; // Efecto de brillo neón
+                z-index: -1;
+            }
         }
     }
-    
-    }
+
 }

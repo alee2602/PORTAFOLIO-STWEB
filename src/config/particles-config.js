@@ -10,7 +10,7 @@ const particlesConfig = {
     },
     particles: {
     number: {
-        value: 300,  // Aumentar el número de estrellas para un cielo más denso
+        value: 400,  // Aumentar el número de estrellas para un cielo más denso
         density: {
         enable: true,
           area: 1200  // Mantener el área para una alta densidad
@@ -23,12 +23,12 @@ const particlesConfig = {
         type: "circle"  // Forma circular para las estrellas
     },
     opacity: {
-        value: 0.8,
+        value: 0.9,
         random: true,  // Opacidad variada para efecto más natural
         anim: {
         enable: true,
         speed: 0.7,
-          opacity_min: 0.2,  // Parpadeo sutil de las estrellas
+          opacity_min: 0.4,  // Parpadeo sutil de las estrellas
         sync: false
         }
     },
