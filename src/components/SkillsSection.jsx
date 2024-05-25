@@ -1,6 +1,6 @@
 import styles from '@/styles/components/skills.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { faChevronUp } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
 
 const SkillsSection = ({ skillType, toggleVisibility, isVisible }) => {
