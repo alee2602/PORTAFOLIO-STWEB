@@ -1,5 +1,6 @@
 @import '@/styles/main';
 
+//Fonts
 $custom-font: 'Plz', sans-serif;
 $custom2-font: 'Metdemo-BLMG';
 $primary-font: 'Open Sans', sans-serif;
@@ -10,8 +11,11 @@ $averia-font: 'Averia', serif;
 $poppins-font: "Poppins", sans-serif;
 $circular-font: "Circularstd", sans-serif;
 
+//Font-size
 $font-size-base: 16px; 
 $header-font-size: 28px; 
 $navbar-font-size: 20px;
 
-$neon-color: #8A2BE2
+//Colors
+$base-color: #0D0C1D;
+$neon-color: #8A2BE2;

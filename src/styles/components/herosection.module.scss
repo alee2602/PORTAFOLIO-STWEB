@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;  
-    color: #ffffff; 
+    color: white; 
     padding: 10px 20px;  
     text-align: center;  
     position: relative;  
@@ -77,5 +77,42 @@
     .text-container:hover {
         transform: scale(1.10); 
     }
+}
 
+/* Media queries para hacer la sección hero responsive */
+@media (max-width: 1200px) {
+    .hero text {
+        font-size: 5rem; 
+    }
+
+    .text-container {
+        font-size: 1.25rem;
+        margin-bottom: 200px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .hero text {
+        font-size: 3.5rem; 
+    }
+
+    .text-container {
+        font-size: 1rem;
+        margin-bottom: 150px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 5px 10px;
+    }
+
+    .hero text {
+        font-size: 2.5rem; 
+    }
+
+    .text-container {
+        font-size: 0.875rem;
+        margin-bottom: 100px; 
+    }
 }

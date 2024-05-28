@@ -3,8 +3,11 @@
 .carouselContainer {
     width: 100%;
     max-width: 1415px; 
+    max-height: 700px;
     padding: 2rem;
-    background-color: rgba(32, 31, 84, 0.4);
+    background-color: rgba(32, 31, 84, 0.1);
+    border-radius: 10px; 
+    backdrop-filter: blur(20px); 
     color: white;
     position: relative;
     margin: 0 auto;
@@ -13,22 +16,23 @@
     text-align: center; 
 
     section {
-        padding: 100px 0; 
+        padding: 50px 0; 
         min-height: 100vh; 
         box-sizing: border-box; 
     }
 
     .titletext {
         font-family: $poppins-font;
+        color: #ACCBFF;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         font-size: 40px;
     }
 
     .slick-prev,
     .slick-next {
         z-index: 1;
-        color: #fff;
+        color: white;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -37,16 +41,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.5); 
+        background-color: rgba(184, 53, 53, 1); 
         border-radius: 50%;
     }
 
     .slick-dots {
-        bottom: -30px;
+        bottom: 10px;
 
         li {
             button:before {
-                color: #fff;
+                color: white;
+                font-size: 12px;
             }
 
             &.slick-active {
@@ -55,5 +60,75 @@
                 }
             }
         }
+    }
+}
+
+/* Media queries para hacer el contenedor del carrusel responsive */
+@media (max-width: 1200px) {
+    .carouselContainer {
+        max-width: 1100px;
+        max-height: 600px;
+        padding: 1.5rem;
+        margin-bottom: 80px;
+    }
+
+    .titletext {
+        font-size: 32px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    .slick-dots li button:before {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carouselContainer {
+        max-width: 700px;
+        max-height: 500px;
+        padding: 1rem;
+        margin-bottom: 60px;
+    }
+
+    .titletext {
+        font-size: 28px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .slick-dots li button:before {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carouselContainer {
+        max-width: 100%;
+        max-height: 400px;
+        padding: 0.5rem;
+        margin-bottom: 40px;
+    }
+
+    .titletext {
+        font-size: 24px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        width: 25px;
+        height: 25px;
+    }
+
+    .slick-dots li button:before {
+        font-size: 6px;
     }
 }

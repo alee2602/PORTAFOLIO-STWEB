@@ -10,10 +10,10 @@ function Footer() {
                 <h2 className={styles.contactTitle}>Connect with me!</h2>
                 <div className={styles.footerContent}>
                     <div className={styles.socialLinks}>
-                        <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/alee2602" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faGithub} className={styles.icon} />
                         </a>
-                        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/m%C3%B3nica-alejandra-salvatierra-chac%C3%B3n-a48664239/" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
                         </a>
                     </div>
@@ -27,5 +27,3 @@ function Footer() {
 }
 
 export default Footer;
-
-

@@ -18,7 +18,7 @@ function ProjectSection() {
         {
             image: '/images/talkiechat.png',
             title: 'Chat Client',
-            description: 'Talkie is a versatile chat client designed to enhance communication with customizable themes. The project allows users to switch between different themes, offering a personalized chat experience. ',
+            description: 'Talkie is a versatile chat client designed to enhance communication. The project allows users to switch between different themes, offering a personalized chat experience. ',
             githubLink: 'https://github.com/alee2602/LAB5-STWEB',
         },
         {
@@ -34,7 +34,7 @@ function ProjectSection() {
             githubLink: 'https://github.com/SRV-JSPA/P2_BD',
         },
         {
-            image: '/images/calculator.png',
+            image: '/images/calculator1.png',
             title: 'Simple Calculator',
             description: 'The Simple Calculator is a straightforward web application designed to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. ',
             githubLink: 'https://github.com/alee2602/LAB8-STWEB',

@@ -2,7 +2,7 @@
 
 .skillsSection {
     padding: 2rem;
-    background: #0D0C1D;
+    background: $base-color;
     color: #e0e0e0;
     text-align: center;
     margin-top: 40px;
@@ -65,7 +65,7 @@
                         left: 50%;
                         transform: translateX(-50%);
                         background: #0f3460;
-                        color: #FFFFFF;
+                        color: white;
                         padding: 0.3rem 0.6rem;
                         border-radius: 5px;
                         font-size: 0.8rem;

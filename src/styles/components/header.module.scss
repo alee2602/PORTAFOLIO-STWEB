@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: #0D0C1D;
+    background-color: $base-color;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -56,10 +56,50 @@
                 bottom: 0;
                 background-color: rgba($neon-color, 0.2);
                 border-radius: 8px;
-                box-shadow: 0 0 4px $neon-color, 0 0 8px $neon-color, 0 0 10px $neon-color; // Efecto de brillo neón
+                box-shadow: 0 0 4px $neon-color, 0 0 8px $neon-color, 0 0 10px $neon-color; 
                 z-index: -1;
             }
         }
     }
+}
 
+/* Media queries para hacer el header responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: calc($header-font-size - 5px); 
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .link {
+        margin: 5px 0;
+        padding: 10px;
+        font-size: calc($navbar-font-size - 2px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 5px;
+    }
+
+    .logo {
+        font-size: calc($header-font-size - 10px); 
+    }
+
+    .link {
+        font-size: calc($navbar-font-size - 4px); 
+    }
 }

@@ -13,7 +13,7 @@ function HeroSection(){
                     </text>
                 </svg>
                 <div className={styles['text-container']}>
-                    <div>You&apos;sre a star and the</div>
+                    <div>You&apos;re a star and the</div>
                     <div>sky&apos;s the limit</div>
                 </div>
                 </section>
