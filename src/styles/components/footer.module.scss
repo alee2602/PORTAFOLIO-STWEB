@@ -85,31 +85,22 @@
 
 @media (max-width: 480px) {
     .footer {
-        padding: 1rem;
+        padding: 20px 10px;
+        font-size: 0.9rem;
+        margin-top: 60px;
+    }
 
-        .contactTitle {
-            font-size: 1.3rem;
+    .socialLinks {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+
+        a {
+            font-size: 1.5rem;
         }
+    }
 
-        .socialLinks {
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-
-            a {
-                font-size: 1.3rem;
-                margin: 0 0.5rem;
-            }
-
-            .icon {
-                width: 1.8rem;
-                height: 1.8rem;
-            }
-        }
-
-        .copyRight {
-            font-size: 0.85rem;
-            margin-top: 0.5rem;
-        }
+    .copyRight {
+        font-size: 0.75rem;
     }
 }

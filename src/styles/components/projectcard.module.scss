@@ -95,7 +95,9 @@
 @media (max-width: 480px) {
     .card {
         padding: 10px;
-        margin: 20px auto;
+        margin: 16px auto;
+        width: 90%;
+        max-width: 95%;
 
         .content {
             .title {
