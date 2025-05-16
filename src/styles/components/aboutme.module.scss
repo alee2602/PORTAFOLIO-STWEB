@@ -1,35 +1,35 @@
-@import '@/styles/variables'; 
+@import '@/styles/variables';
 
 .about-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px;
+    padding: 100px 40px;
     z-index: 3;
     min-height: 100vh;
     margin: 0 auto;
-    
+
     section {
-        padding: 100px 0; 
-        min-height: 100vh; 
-        box-sizing: border-box; 
+        padding: 100px 0;
+        min-height: 100vh;
+        box-sizing: border-box;
     }
 
     .content-container {
-        background-color: rgba(32, 31, 84, 0.1); 
-        border-radius: 10px; 
-        backdrop-filter: blur(20px); 
-        padding: 40px;
+        background-color: rgba(32, 31, 84, 0.1);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        padding: 10px 10px;
         width: 100%;
         max-width: 1400px;
-        color: white; 
+        color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .header-text {
-        color: #ACCBFF; 
+        color: #ACCBFF;
         font-size: 32px;
         font-family: $circular-font;
     }
@@ -39,18 +39,21 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin-bottom: 30px; 
+        margin-bottom: 30px;
         max-width: 1200px;
-        margin-right: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        padding: 0 20px;
     }
 
     .picture img {
-        width: 200px; 
+        width: 200px;
         height: 200px;
         border-radius: 50%;
         object-fit: cover;
         margin-right: 20px;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
 
     .about-text {
@@ -70,7 +73,7 @@
         .skill-button {
             background-color: $base-color;
             border: 1px solid $base-color;
-            font-size: 16px; 
+            font-size: 16px;
             border-radius: 8px;
             color: white;
             font-family: $poppins-font;
@@ -78,14 +81,14 @@
             margin-top: 10px;
             margin-right: 10px;
             cursor: pointer;
-            transition: all 0.3s ease-in-out; 
-            box-shadow: 0 0 10px #052659, 0 0 20px #052659, 0 0 30px #053659; 
-            
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 0 10px #052659, 0 0 20px #052659, 0 0 30px #053659;
+
             &:hover {
-                color: #FFFFFF; 
+                color: #FFFFFF;
                 background-color: #4C2A85;
                 border: 1px solid #4C2A75;
-                box-shadow: 0 0 10px #8A2BE2, 0 0 20px #8A2BE2, 0 0 30px #8A2BE2, 0 0 40px #8A2BE2; 
+                box-shadow: 0 0 10px #8A2BE2, 0 0 20px #8A2BE2, 0 0 30px #8A2BE2, 0 0 40px #8A2BE2;
             }
         }
     }
@@ -142,28 +145,45 @@
 
 @media (max-width: 480px) {
     .about-section {
-        padding: 20px;
+        padding: 20px 10px;
     }
 
-    .header-text {
-        font-size: 20px;
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        text-align: center;
     }
 
     .picture img {
         width: 100px;
         height: 100px;
+        margin: 0 auto 15px auto;
+    }
+
+    .header-text {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .about-text {
         font-size: 14px;
+        margin: 0 10px 20px;
+        text-align: justify;
     }
 
     .skills {
-        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
     .skill-button {
         font-size: 12px;
         padding: 6px 12px;
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
     }
 }

@@ -10,7 +10,6 @@ const hardSkills = [
     skills: [
         { name: 'Python', link: 'https://www.python.org/doc/', svg: '/svgs/python.svg' },
         { name: 'Java', link: 'https://docs.oracle.com/en/java/', svg: '/svgs/java.svg' },
-        { name: 'Kotlin', link: 'https://kotlinlang.org/docs/home.html', svg: '/svgs/kotlin.svg' },
         { name: 'C++', link: 'https://cplusplus.com/doc/', svg: '/svgs/cplusplus.svg' },
         { name: 'JavaScript', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', svg: '/svgs/javascript.svg' },
         { name: 'PHP', link: 'https://www.php.net/docs.php', svg: '/svgs/php.svg' },
@@ -34,20 +33,20 @@ const hardSkills = [
     skills: [
         { name: 'MySQL', link: 'https://dev.mysql.com/doc/', svg: '/svgs/mysql.svg' },
         { name: 'PostgreSQL', link: 'https://www.postgresql.org/docs/', svg: '/svgs/postgresql.svg' },
+        { name: 'MongoDB', link: 'https://www.mongodb.com/docs/', svg: '/svgs/mongodb.svg' },
             ],
         },
     {
     category: 'Data Visualization',
     skills: [
-        { name: 'Power BI', link: 'https://docs.microsoft.com/en-us/power-bi/', svg: '/svgs/powerbi.svg' },
-        { name: 'Tableau', link: 'https://www.tableau.com/learn/training', svg: '/svgs/tableau.svg' },
+        { name: 'MongoDB Charts', link: 'https://docs.microsoft.com/en-us/power-bi/', svg: '/svgs/mongodbcharts.svg' },
             ],
         },
     ];
 
 const softSkills = [
-    { name: 'Communication', description: 'Effective speaking, Active listening' },
-    { name: 'Teamwork', description: 'Collaboration, Conflict resolution' },
+    { name: 'Communication', description: 'Effective speaking, Active listening, Clarity in written reports' },
+    { name: 'Teamwork', description: 'Collaboration, Conflict resolution, Attention to detail, Proactivity' },
     { name: 'Problem Solving', description: 'Critical thinking, Creativity' },  ];
 
     return isVisible ? (

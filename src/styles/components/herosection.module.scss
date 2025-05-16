@@ -1,118 +1,122 @@
-@import '@/styles/variables'; 
+@import '@/styles/variables';
 
 .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
-    color: white; 
-    padding: 10px 20px;  
-    text-align: center;  
-    position: relative;  
-    min-height: 675px;  
-    z-index: 2; 
-    min-height: 100vh; 
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    min-height: 675px;
+    z-index: 2;
+    min-height: 100vh;
     overflow: hidden;
 
     section {
-        padding: 100px 0; 
-        min-height: 100vh; 
-        box-sizing: border-box; 
+        padding: 100px 0;
+        min-height: 100vh;
+        box-sizing: border-box;
     }
 
-    svg{
+    svg {
         margin-bottom: 200px;
     }
 
-    text {
-        font-size: 6.8rem;    
+    .signatureText {
+        font-size: clamp(2.5rem, 7vw, 6.8rem);
         font-weight: bold;
         font-family: $circular-font;
-        text-anchor: middle;
-        position: relative;
-        fill: #afb4c1; //#9A9FAC
-        text-shadow: 
-        0 0 5px #551395, 
-        0 0 10px #551395, 
-        0 0 15px #1C2691, 
-        0 0 20px #1C2691, 
-        0 0 25px #1C2691, 
-        0 0 30px #1C2691;
-    animation: neonGlow 1.3s ease-in-out infinite alternate;
+        color: #afb4c1;
+        text-align: center;
+        text-shadow:
+            0 0 5px #551395,
+            0 0 10px #551395,
+            0 0 15px #1C2691,
+            0 0 20px #1C2691,
+            0 0 25px #1C2691,
+            0 0 30px #1C2691;
+        animation: neonGlow 1.3s ease-in-out infinite alternate;
+        margin-bottom: 80px;
     }
 
     @keyframes neonGlow {
         from {
-        text-shadow: 
-            0 0 5px #551395, 
-            0 0 10px #551395, 
-            0 0 15px #551395, 
-            0 0 20px #1C2691, 
-            0 0 25px #1C2691, 
-            0 0 30px #1C2691;
+            text-shadow:
+                0 0 5px #551395,
+                0 0 10px #551395,
+                0 0 15px #551395,
+                0 0 20px #1C2691,
+                0 0 25px #1C2691,
+                0 0 30px #1C2691;
         }
+
         to {
-        text-shadow: 
-            0 0 10px #551395, 
-            0 0 20px #551395, 
-            0 0 30px #551395, 
-            0 0 35px #1C2691, 
-            0 0 40px #1C2691, 
-            0 0 45px #1C2691;
+            text-shadow:
+                0 0 10px #551395,
+                0 0 20px #551395,
+                0 0 30px #551395,
+                0 0 35px #1C2691,
+                0 0 40px #1C2691,
+                0 0 45px #1C2691;
         }
     }
 
-    .text-container{
-        font-size: 1.5rem;  
-        margin-bottom: 250px; 
+    .text-container {
+        font-size: 1.2rem;
+        margin-bottom: 250px;
         color: #FFFFFF;
-        font-family: 'Georgia', serif; 
+        font-family: 'Georgia', serif;
         font-style: italic;
         text-shadow:
             2px 2px 4px rgba(0, 0, 0, 0.75),
             0px 0px 10px rgba(255, 255, 255, 1);
-            transition: transform 0.2s ease-in-out;
+        transition: transform 0.2s ease-in-out;
     }
 
     .text-container:hover {
-        transform: scale(1.10); 
+        transform: scale(1.10);
     }
 }
 
 /* Media queries para hacer la sección hero responsive */
 @media (max-width: 1200px) {
     .hero text {
-        font-size: 5rem; 
+        font-size: 5rem;
     }
 
     .text-container {
         font-size: 1.25rem;
-        margin-bottom: 200px; 
+        margin-bottom: 200px;
     }
 }
 
-@media (max-width: 768px) {
-    .hero text {
-        font-size: 3.5rem; 
-    }
-
-    .text-container {
-        font-size: 1rem;
-        margin-bottom: 150px; 
-    }
-}
-
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .hero {
-        padding: 5px 10px;
-    }
+        padding: 40px 20px;
+        justify-content: flex-start;
 
-    .hero text {
-        font-size: 2.5rem; 
-    }
+        section {
+            padding: 60px 0;
+            min-height: auto;
+        }
 
-    .text-container {
-        font-size: 0.875rem;
-        margin-bottom: 100px; 
+        text {
+            font-size: 3rem;
+            text-shadow: none;
+        }
+
+        svg {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        text {
+            font-size: 2.8rem;
+        }
     }
 }

@@ -21,7 +21,7 @@ function AboutSection() {
                 <section id="about">
                 <div className={styles['content-container']}>
                     <div className={styles['header-text']}>
-                    <h1>Hello! I&apos;m Mónica</h1>
+                    <h1>Who am I?</h1>
                     </div>
                     <div className={styles['content-wrapper']}>
                         <div className={styles.picture}>
@@ -33,7 +33,7 @@ function AboutSection() {
                             />
                         </div>
                         <div className={styles['about-text']}>
-                            <p>I&apos;m a passionate third-year Computer Science student with a knack for both front-end and back-end web development. My journey in tech has led me to a fascinating crossroad where design meets functionality, enabling me to craft seamless digital experiences.</p>
+                            <p>I&apos;m a passionate fourth-year Computer Science student with a knack for both front-end and back-end web development. My journey in tech has led me to a fascinating crossroad where design meets functionality, enabling me to craft seamless digital experiences.</p>
                             <br />
                             <p>Beyond the world of web development, I&apos;m also captivated by the boundless possibilities within data science.</p>
                         </div>

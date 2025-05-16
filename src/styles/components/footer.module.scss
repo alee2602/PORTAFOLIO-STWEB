@@ -1,8 +1,8 @@
-@import '@/styles/variables'; 
+@import '@/styles/variables';
 
 
 .footer {
-    background-color: $base-color; 
+    background-color: $base-color;
     color: white;
     padding: 2rem;
     text-align: center;
@@ -14,7 +14,7 @@
     .contactTitle {
         font-size: 2rem;
         margin-bottom: 1rem;
-        font-family: 'Poppins', sans-serif; 
+        font-family: 'Poppins', sans-serif;
     }
 
     .footerContent {
@@ -33,7 +33,7 @@
             color: white;
             margin: 0 1rem;
             text-decoration: none;
-            font-size: 2rem; 
+            font-size: 2rem;
             transition: color 0.3s ease;
 
             &:hover {
@@ -43,8 +43,8 @@
 
         .icon {
             color: white;
-            width: 3rem; 
-            height: 3rem; 
+            width: 3rem;
+            height: 3rem;
         }
     }
 
@@ -56,58 +56,60 @@
 /* Media queries para hacer el footer responsive */
 @media (max-width: 768px) {
     .footer {
-        padding: 1.5rem;
         font-size: 1rem;
-    }
+        padding: 1.5rem;
 
-    .contactTitle {
-        font-size: 1.5rem;
-    }
-
-    .socialLinks {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-
-        a {
+        .contactTitle {
             font-size: 1.5rem;
+            margin-bottom: 0.8rem;
         }
 
-        .icon {
-            width: 2rem;
-            height: 2rem;
-        }
-    }
+        .socialLinks {
+            gap: 1.5rem;
 
-    .copyRight {
-        font-size: 0.875rem;
+            a {
+                font-size: 1.5rem;
+            }
+
+            .icon {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+
+        .copyRight {
+            font-size: 0.9rem;
+        }
     }
 }
 
 @media (max-width: 480px) {
     .footer {
         padding: 1rem;
-        font-size: 0.875rem;
-    }
 
-    .contactTitle {
-        font-size: 1.25rem;
-    }
-
-    .socialLinks {
-        gap: 0.5rem;
-
-        a {
-            font-size: 1.25rem;
+        .contactTitle {
+            font-size: 1.3rem;
         }
 
-        .icon {
-            width: 1.5rem;
-            height: 1.5rem;
-        }
-    }
+        .socialLinks {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
 
-    .copyRight {
-        font-size: 0.75rem;
+            a {
+                font-size: 1.3rem;
+                margin: 0 0.5rem;
+            }
+
+            .icon {
+                width: 1.8rem;
+                height: 1.8rem;
+            }
+        }
+
+        .copyRight {
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
     }
 }

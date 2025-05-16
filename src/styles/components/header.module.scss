@@ -32,6 +32,20 @@
         display: flex;
         align-items: center;
         margin-left: auto;
+
+        &.collapsed {
+            display: none;
+        }
+
+        &.open {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: $base-color;
+            width: 100%;
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
     }
 
     .link {
@@ -56,7 +70,7 @@
                 bottom: 0;
                 background-color: rgba($neon-color, 0.2);
                 border-radius: 8px;
-                box-shadow: 0 0 4px $neon-color, 0 0 8px $neon-color, 0 0 10px $neon-color; 
+                box-shadow: 0 0 4px $neon-color, 0 0 8px $neon-color, 0 0 10px $neon-color;
                 z-index: -1;
             }
         }
@@ -65,41 +79,57 @@
 
 /* Media queries para hacer el header responsive */
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .logo {
-        font-size: calc($header-font-size - 5px); 
-        margin-left: 0;
-        margin-bottom: 10px;
+    .menuToggle {
+        display: block;
+        z-index: 11; 
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
 
     .nav {
+        display: none;
+        width: 100%;
         flex-direction: column;
         align-items: flex-start;
-        width: 100%;
+        background-color: $base-color;
+        padding: 10px 20px;
+        margin-top: 10px;
     }
 
-    .link {
-        margin: 5px 0;
-        padding: 10px;
-        font-size: calc($navbar-font-size - 2px); 
+    .nav.open {
+        display: flex;
     }
+
+    .nav a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+.link {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: calc($navbar-font-size - 2px);
 }
 
 @media (max-width: 480px) {
     .header {
-        padding: 5px;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav {
+        display: none !important;
+    }
+
+    .menuToggle {
+        display: none !important;
     }
 
     .logo {
-        font-size: calc($header-font-size - 10px); 
-    }
-
-    .link {
-        font-size: calc($navbar-font-size - 4px); 
+        font-size: calc($header-font-size - 10px);
+        margin: 0 auto;
     }
 }
